@@ -5,17 +5,13 @@ function myAnimal() {
 }
 
 function yourAnimal() {
-  // How can we make sure that this function
-  // and the above function both pass?
-  // P.S.: You can't just hard-code 'cat' below
+  let animal = "cat" // has local scope in the block
   return animal
 }
 
 function add2(n) {
+  const two = 2  // code reads from top to bottom, so had to make sure two = 2 was defined before it was called to be used
   return n + two
-
-  // Feel free to move things around!
-  const two = 2
 }
 
 var funkyFunction = function() {
